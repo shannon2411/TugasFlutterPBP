@@ -14,7 +14,7 @@ class _ShowBudgetState extends State<ShowBudget> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Form Budget'),
+          title: const Text('Data Budget'),
         ),
         drawer: buildDrawer(context),
         body: SingleChildScrollView(
@@ -60,7 +60,7 @@ class _ShowBudgetState extends State<ShowBudget> {
                                                           fontSize: 18),
                                                     ),
                                                     Text(
-                                                      "${budget.date.day}/${budget.date.month}/${budget.date.year}",
+                                                      "${budget.date.day}-${budget.date.month}-${budget.date.year}",
                                                     ),
                                                   ]),
                                               const Spacer(),

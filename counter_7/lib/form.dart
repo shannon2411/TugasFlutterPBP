@@ -49,7 +49,7 @@ class _MyFormPageState extends State<MyFormPage> {
                           children: [
                             TextFormField(
                               decoration: InputDecoration(
-                                hintText: "Contoh: Sate Pacil",
+                                hintText: "Contoh: Soto Pak Muchlis",
                                 labelText: "Judul",
 
                                 // Menambahkan circular border agar lebih rapi
@@ -84,7 +84,7 @@ class _MyFormPageState extends State<MyFormPage> {
                             TextFormField(
                               controller: _controllerNominal,
                               decoration: InputDecoration(
-                                hintText: "Contoh: 20000",
+                                hintText: "Contoh: 15000",
                                 labelText: "Nominal",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(5.0),
@@ -151,7 +151,7 @@ class _MyFormPageState extends State<MyFormPage> {
                   TextButton(
                     child: Text(_dateTime == null
                         ? "Pick a date"
-                        : "${_dateTime!.day}/${_dateTime!.month}/${_dateTime!.year}"),
+                        : "${_dateTime!.day}-${_dateTime!.month}-${_dateTime!.year}"),
                     onPressed: () {
                       showDatePicker(
                         context: context,
