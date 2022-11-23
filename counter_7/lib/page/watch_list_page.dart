@@ -54,8 +54,13 @@ class _WatchListPageState extends State<WatchListPage> {
                           horizontal: 8, vertical: 8),
                       padding: const EdgeInsets.all(20.0),
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 208, 137, 87),
+                        color: Color.fromARGB(255, 255, 255, 255),
                         borderRadius: BorderRadius.circular(15.0),
+                        border: Border.all(
+                          color: snapshot.data![index].fields.watched
+                          ?Color.fromARGB(255, 71, 203, 205)
+                          :Color.fromARGB(255, 30, 44, 99),
+                        )
                       ),
                       child: GestureDetector(
                         onTap: () => Navigator.push(
@@ -82,7 +87,7 @@ class _WatchListPageState extends State<WatchListPage> {
                               style: const TextStyle(
                                 fontSize: 18.0,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 26, 19, 19),
                               ),
                             ),
                             SizedBox(
